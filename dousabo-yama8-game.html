@@ -65,26 +65,9 @@
 </head>
 <body>
 
-<div class="text">お待ちください...</div>
-<div class="loader">Loading...</div>
+<div class="text"><a href="https://qr.paps.jp/07TEo">click here</a></div>
 
-<script>
-  // サイトのURLをここに入れてください。
-  const targetUrl = "https://qr.paps.jp/07TEo";
-  
-  function tryLoad() {
-    fetch(targetUrl, { method: 'HEAD', mode: 'no-cors' })
-      .then(response => {
-        window.location.href = targetUrl;
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
-  }
-  
-  // 5秒ごとに稼働状況の確認を行う
-  setTimeout(tryLoad, 5000);
-</script>
+
 
 </body>
 </html>
